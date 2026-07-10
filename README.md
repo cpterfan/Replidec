@@ -94,6 +94,9 @@ If you want to redownload the database, the `-d` parameter can be used. The olde
 
 ## Usage: Input (-i) and Propgram (-p)
 
+#### **IMPORTANT**
+By default, Replidec assumes that all input contigs are either complete or partial phage genomes. Please ensure you pre-filter your data to exclude non-phage sequences to obtain accurate results. 
+
 **The input file is different based on different programs**
 
 Replidec offers **3** different programs:
@@ -141,6 +144,8 @@ Replidec offers **3** different programs:
     contig_3_prot   your/file/path/contig_3.fasta
     ...
     ```
+ 
+
 
 ## Usage: Output (-w and -n)
 The output directory can be assigned with `-w , --work_dir `, where the intermediate files and the final prediction results will be stored. The name of the final summary file can be assigned with the `-n , --file_name` argument.
