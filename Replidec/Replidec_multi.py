@@ -197,7 +197,7 @@ def bayes_classifier_contig(inputfile, wd, summaryfile="BC_predict.summary", thr
                     bc_label = "Unclassified"
 
             if pfam_label == "Virulent" and bc_label == "Unclassified":
-                final_label = "Unclassified"
+                final_label = "Virulent"
             elif pfam_label == "Temperate" or bc_label == "Temperate":
                 final_label = "Temperate"
             else:
