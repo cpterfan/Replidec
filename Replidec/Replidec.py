@@ -333,7 +333,7 @@ def bayes_classifier_single(inputfile, prefix, wd, hmm_criteria=1e-5, mmseqs_cri
     if pfam_label == "Temperate" or bc_label == "Temperate":
         final_label = "Temperate"
     elif pfam_label == "Virulent" and bc_label == "Unclassified":
-        final_label = "Unclassified"
+        final_label = "Virulent"
     else:
         final_label = "Virulent"
 
